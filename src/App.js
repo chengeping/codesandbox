@@ -1,12 +1,28 @@
 import React from "react";
 import "./styles.css";
 import Demo from "./demo";
+import UseMemoExample from "./hooks/MemoExample";
+import CallbackExample from "./hooks/CallbackExample";
+import Sync from "./hooks/Sync";
+import CreateHook from "./hooks/CreateHook";
+import ContextExample from "./hooks/ContextExample";
+import ReducerExample from "./hooks/ReducerExample";
 export default function App() {
   return (
     <div className="App">
       <Demo />
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <hr />
+      <UseMemoExample></UseMemoExample>
+      <hr />
+      <CallbackExample />
+      <hr />
+      <Sync />
+      <hr />
+      <CreateHook />
+      <hr />
+      <ContextExample />
+      <hr />
+      <ReducerExample />
     </div>
   );
 }
